@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  background: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  color: #fff;
+  background-image: url("./image/city.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+#root .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#root .form h1 {
+  color: orange;
+  font-weight: bold;
+  font-size: 3rem;
+}
+#root .form .searchbar {
+  border-bottom: 2px solid #fbb034;
+  width: 100%;
+  margin-top: 10px;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+}
+#root .form .btn {
+  width: 100%;
+  color: #fff;
+  border: 2px solid #fbb034;
+  margin-top: 20px;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#root .content {
+  margin-top: 1rem;
+  width: 18rem;
+  text-align: center;
+  font-size: 1.3rem;
 }
