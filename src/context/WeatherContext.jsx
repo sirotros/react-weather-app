@@ -3,7 +3,8 @@ import { createContext, useState, useContext, useEffect } from "react";
 const WeatherContext = createContext();
 export const WeatherProvider = ({ children }) => {
   const url = "https://api.openweathermap.org/data/2.5/";
-  const key = "8c5bf5034919c1c78e02ce7b5c56a7e2";
+  //api key
+  const key = "";
 
   const [data, setdata] = useState([]);
   const [city, setCity] = useState("izmir");
